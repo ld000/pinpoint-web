@@ -1,0 +1,17 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+app/vendors/**
+
+webpack-test.config.js
+
+webpack.config.js
+
+webpack-dist.config.js
+
+webpack.dll.config.js
+
+proxy.js
+
+upload.js
+
+dist

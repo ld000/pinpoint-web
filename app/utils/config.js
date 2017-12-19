@@ -1,0 +1,25 @@
+
+export const menuIcon = {
+  数据看板: 'laptop',
+  核心指标: 'user',
+  重点指标: 'home',
+  规模指标: 'folder',
+  质量指标: 'solution',
+  配送员效率指标: 'line-chart',
+  '运营指标（超时）': 'clock-circle-o',
+  '运营指标（取消）': 'delete',
+  '运营指标（其他）': 'exception',
+  财务指标: 'team',
+  实时数据: 'global',
+  定制数据: 'edit',
+  需求报表: 'book',
+  订单日志: 'solution',
+  实时单量大屏: 'appstore-o',
+  客服报表: 'contacts',
+  实时报表: 'eye-o',
+  客服数据: 'message',
+  系统管理: 'hdd',
+  原先报表: 'folder',
+  下载页: 'download',
+  配置页: 'schedule'
+}

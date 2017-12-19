@@ -1,0 +1,15 @@
+{
+    "presets": ["es2015", "stage-0", "react"],
+    "plugins": [
+        "espower",
+        "transform-runtime",
+        "transform-decorators-legacy",
+        //["antd", [{ "libraryName": "antd" }]],
+        ["import", { "libraryName": "antd", "style": "css" }],
+        ["webpack-alias", {"config": "./webpack-test.config.js"}]
+        // ["webpack-alias", {"config": "${PWD}/webpack-test.config.js"}]
+    ],
+    "env": {
+        
+    }
+}
