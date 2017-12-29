@@ -543,13 +543,13 @@ export default class Dag extends PureComponent {
   renderData = (props) => {
     const { mapData } = props;
 
-    if (!mapData || !mapData.applicationMapData) {
+    if (!mapData) {
       return;
     }
 
     this.state.myDiagram.model = new go.GraphLinksModel(
-      mapData.applicationMapData.nodeDataArray,
-      mapData.applicationMapData.linkDataArray
+      mapData.nodeDataArray,
+      mapData.linkDataArray
     );
   }
 

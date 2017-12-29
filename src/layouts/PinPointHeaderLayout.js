@@ -83,21 +83,23 @@ class PageHeaderLayout extends React.PureComponent {
           logo={logo}
           action={<div className="action">action</div>}
         />
-        <Switch>
-          {
-            getRouteData('PinPointHeaderLayout').map(item =>
-              (
-                <Route
-                  exact={item.exact}
-                  key={item.path}
-                  path={item.path}
-                  component={item.component}
-                />
+        <div>
+          <Switch>
+            {
+              getRouteData('PinPointHeaderLayout').map(item =>
+                (
+                  <Route
+                    exact={item.exact}
+                    key={item.path}
+                    path={item.path}
+                    component={item.component}
+                  />
+                )
               )
-            )
-          }
-          <Redirect exact from="/" to="/server-map" />
-        </Switch>
+            }
+            <Redirect exact from="/" to="/server-map" />
+          </Switch>
+        </div>
       </div>
     );
   }

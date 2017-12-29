@@ -16,7 +16,7 @@ export default class ServerMap extends Component {
     const { serverMap } = this.props;
     return (
       <div>
-        <Dag mapData={serverMap.data} />
+        <Dag mapData={serverMap.data.applicationMapData} />
       </div>
     );
   }
