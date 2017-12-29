@@ -28,6 +28,7 @@
     "g-cloud": "^1.0.2-beta",
     "g2": "^2.3.13",
     "g2-plugin-slider": "^1.2.1",
+    "gojs": "^1.6.5",
     "lodash": "^4.17.4",
     "lodash-decorators": "^4.4.1",
     "lodash.clonedeep": "^4.5.0",
@@ -82,14 +83,27 @@
     "nightmare": "^2.10.0"
   },
   "babel": {
-    "presets": ["env", "react"],
-    "plugins": ["transform-decorators-legacy", "transform-class-properties"]
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties"
+    ]
   },
   "jest": {
-    "setupFiles": ["<rootDir>/tests/setupTests.js"],
-    "testMatch": ["**/?(*.)(spec|test|e2e).js?(x)"],
+    "setupFiles": [
+      "<rootDir>/tests/setupTests.js"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test|e2e).js?(x)"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/tests/jasmine.js",
-    "moduleFileExtensions": ["js", "jsx"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
     "moduleNameMapper": {
       "\\.(css|less)$": "<rootDir>/tests/styleMock.js"
     }
@@ -98,5 +112,9 @@
     "**/*.{js,jsx}": "lint-staged:js",
     "**/*.less": "stylelint --syntax less"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
 }

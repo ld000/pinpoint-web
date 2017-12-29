@@ -92,3 +92,18 @@ export function digitUppercase(n) {
 
   return s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
 }
+
+export function propsEqual(old, target) {
+  let r = true;
+  for (const prop in old) {
+    if (typeof old[prop] === 'function' && typeof target[prop] === 'function') {
+      if (old[prop].toString() !== target[prop].toString()) {
+        r = false;
+      }
+    } else if (old[prop] !== target[prop]) {
+      r = false;
+    }
+  }
+  return r;
+}
+

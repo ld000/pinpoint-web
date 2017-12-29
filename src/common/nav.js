@@ -213,16 +213,10 @@ export const getNavData = app => [
     path: '/',
     children: [
       {
-        name: 'test',
-        path: 'test',
+        name: 'ServerMap',
+        path: 'server-map',
         icon: 'user',
-        children: [
-          {
-            name: '基础详情页',
-            path: 'basic',
-            component: dynamicWrapper(app, ['profile'], () => import('../routes/Profile/BasicProfile')),
-          },
-        ],
+        component: dynamicWrapper(app, ['serverMap'], () => import('../routes/ServerMap/ServerMap')),
       },
     ],
   },
