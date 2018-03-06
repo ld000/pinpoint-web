@@ -4,6 +4,7 @@ import { LocaleProvider, Spin } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import dynamic from 'dva/dynamic';
 import cloneDeep from 'lodash/cloneDeep';
+import 'font-awesome/css/font-awesome.min.css';
 import { getNavData } from './common/nav';
 import { getPlainNode } from './utils/utils';
 

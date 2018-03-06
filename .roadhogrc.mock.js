@@ -1334,7 +1334,24 @@ const proxy = {
             }
         ]
     }
-  }
+  },
+  'GET /applications': [
+    {
+       "applicationName":"a-areaservice",
+       "serviceType":"SPRING_BOOT",
+       "code":1210
+    },
+    {
+       "applicationName":"a-customerservice",
+       "serviceType":"SPRING_BOOT",
+       "code":1210
+    },
+    {
+       "applicationName":"a-dispatch",
+       "serviceType":"DUBBO_PROVIDER",
+       "code":1110
+    }
+  ]
 };
 
 export default noProxy ? {} : delay(proxy, 1000);

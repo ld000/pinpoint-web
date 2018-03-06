@@ -207,7 +207,7 @@ export const getNavData = app => [
   //   },
   // },
   {
-    component: dynamicWrapper(app, [], () => import('../layouts/PinPointHeaderLayout')),
+    component: dynamicWrapper(app, ['common'], () => import('../layouts/PinPointHeaderLayout')),
     layout: 'PinPointHeaderLayout',
     name: 'PinPointHeaderLayout', // for breadcrumb
     path: '/',
