@@ -1,4 +1,4 @@
-import { queryRule, removeRule, addRule } from '../services/api';
+import { queryApplicationList } from '../services/dapoint';
 
 export default {
   namespace: 'rule',
@@ -17,7 +17,7 @@ export default {
         type: 'changeLoading',
         payload: true,
       });
-      const response = yield call(queryRule, payload);
+      const response = yield call(queryApplicationList, payload);
       yield put({
         type: 'save',
         payload: response,

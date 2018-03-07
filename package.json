@@ -25,6 +25,7 @@
     "classnames": "^2.2.5",
     "core-js": "^2.5.1",
     "dva": "^2.1.0",
+    "echarts": "^4.0.4",
     "font-awesome": "^4.7.0",
     "g-cloud": "^1.0.2-beta",
     "g2": "^2.3.13",

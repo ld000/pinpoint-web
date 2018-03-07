@@ -7,6 +7,7 @@ import { getProfileBasicData } from './mock/profile';
 import { getProfileAdvancedData } from './mock/profile';
 import { getNotices } from './mock/notices';
 import { format, delay } from 'roadhog-api-doc';
+import { getApplicationList } from './mock/dapoint'
 
 // 是否禁用代理
 const noProxy = process.env.NO_PROXY === 'true';
@@ -79,6 +80,7 @@ const proxy = {
     res.send({ status: 'ok' });
   },
   'GET /api/notices': getNotices,
+  'GET /getAgentList.pinpoint': getApplicationList,
   'GET /api/server-map': {
     "applicationMapData": {
         "range": {
